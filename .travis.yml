@@ -1,14 +1,7 @@
-language: nodejs
+language: bash
 
 services:
   - docker
 
-before_install:
-  - docker build ./player-service
-  - docker build ./tick-service
-
-deploy:
-  provider: script
-  script: bash run
-  on:
-    branch: master
+script:
+  - bash run.sh
