@@ -13,6 +13,11 @@ It's recommended that [NVM](https://github.com/creationix/nvm) be used to manage
 The project includes an .nvmrc which specifies NodeJS 6.2.1
 
 ## Usage
+:warning: Before running, you must have a docker network named `hydra-net`
+
+```shell
+$ docker network create hydra-net
+```
 
 ```shell
 $ sh run.sh
