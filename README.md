@@ -1,6 +1,11 @@
 # Hydra Tests
+[![Build Status](https://travis-ci.org/sizzlorox/hydra-tests.svg?branch=master)](https://travis-ci.org/sizzlorox/hydra-tests)
 
-Testing Hydra by having a service that sends ticks to multiple player services
+Testing Hydra by having a service that sends ticks to multiple player services via Hydra Router 
+
+## Required
+- Docker [View Homepage](https://www.docker.com/)
+- NodeJS v6+ [View Homepage](https://www.nodejs.org)
 
 ## Pre-installation
 
@@ -20,3 +25,8 @@ $ sh stop.sh
 ## Screenshot
 
 ![Preview](screenshot.png?raw=true)
+
+## Resources
+
+- Hydra [View Homepage](https://www.hydramicroservice.com/)
+- Hydra Router [View Homepage](https://www.hydramicroservice.com/docs/tools/hydra-router/)
