@@ -16,3 +16,7 @@ $ sh run.sh
 ```shell
 $ sh stop.sh
 ```
+
+## Screenshot
+
+![Preview](screenshot.png?raw=true)
