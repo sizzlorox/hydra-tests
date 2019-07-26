@@ -1,5 +1,5 @@
 # Hydra Tests
-[![Build Status](https://travis-ci.org/sizzlorox/hydra-tests.svg?branch=master)](https://travis-ci.org/sizzlorox/hydra-tests)
+[![Build Status](https://travis-ci.org/sizzlorox/hydra-tests.svg?branch=master)](https://travis-ci.org/sizzlorox/hydra-tests) [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)](https://github.com/nikku/works-on-my-machine)
 
 Testing Hydra by having a service that sends ticks to multiple player services via Hydra Router 
 
