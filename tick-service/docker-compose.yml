@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+
+  tick-service:
+    build: ./tick-service
+    depends_on:
+      - router-service
+    ports:
+      - 5000:5000
+    volumes:
+      - ./tick-service/config:/usr/src/app/config
+    networks:
+      - hydra-net
+
+networks:
+  hydra-net:
+    external: true

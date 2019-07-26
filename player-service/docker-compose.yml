@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+
+  player-service:
+    build: ./player-service
+    depends_on:
+      - redis
+      - router-service
+    ports:
+      - 5001-5020:5000
+    volumes:
+      - ./player-service/config:/usr/src/app/config
+    networks:
+      - hydra-net
+
+networks:
+  hydra-net:
+    external: true

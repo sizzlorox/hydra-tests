@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+
+  router-service:
+    image: flywheelsports/hydra-router
+    # volumes:
+    #   - ./router-config.json:/usr/src/app/config/config.json
+    depends_on:
+      - redis
+    extra_hosts:
+      - host:192.168.1.136
+    ports:
+      - 5353:5353
+    networks:
+      - hydra-net
+
+  redis:
+    image: redis:alpine
+    # volumes:
+    #   - ./redis-data:/data
+    ports:
+      - 6379:6379
+    networks:
+      - hydra-net
+
+networks:
+  hydra-net:
+    external: true

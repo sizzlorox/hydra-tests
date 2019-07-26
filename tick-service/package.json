@@ -1,0 +1,28 @@
+{
+  "name": "tick-service",
+  "version": "0.0.1",
+  "author": "Sunny Huang <sunnyh@mobagel.com>",
+  "private": true,
+  "scripts": {
+    "start": "node tick-service.js",
+    "debug": "node-debug tick-service.js --debug-brk",
+    "test": "mocha specs --reporter spec",
+    "docker": "node scripts/docker.js"
+  },
+  "engines": {
+    "node": ">=6.2.1"
+  },
+  "dependencies": {
+    "fwsp-config": "1.1.5",
+    "fwsp-jsutils": "1.0.10",
+    "fwsp-logger": "0.3.4",
+    "hydra": "1.7.1",
+    "ws": "^7.1.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.16.0",
+    "mocha": "3.2.0",
+    "superagent": "3.5.2"
+  }
+}
