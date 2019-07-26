@@ -7,5 +7,8 @@ before_install:
   - docker build ./player-service
   - docker build ./tick-service
 
-script:
-  - sh run.sh
+deploy:
+  provider: script
+  script: bash run
+  on:
+    branch: master
