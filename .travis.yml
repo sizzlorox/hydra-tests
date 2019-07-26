@@ -16,6 +16,7 @@ before_script:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
   - chmod +x run.sh
+  - docker network create hydra-net
 
 script:
   - bash run.sh
